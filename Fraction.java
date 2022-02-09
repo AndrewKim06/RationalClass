@@ -17,6 +17,12 @@ public class Fraction
 	public String getRational(){
 		return numerator + "/" + denominator;
 	}
+	public int getNumerator(){
+		return numerator;
+	}
+	public int getDenominator(){
+		return denominator;
+	}
   
   public double getDecimal(){
     double decimal = (double)numerator / (double)denominator;

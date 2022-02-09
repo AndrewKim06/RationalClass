@@ -4,16 +4,18 @@ class Main {
   public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-    int numerator;
-    int denominator;
-		System.out.print("Enter the numerator ----> ");		
-		numerator = scanner.nextInt();
-		System.out.print("Enter the denominator --> ");
-    denominator = scanner.nextInt();
+		System.out.print("Enter the 1st numerator ----> ");		
+		int firstNumerator = scanner.nextInt();
+		System.out.print("Enter the 1st denominator --> ");
+    int firstDenominator = scanner.nextInt();
+    
+    System.out.print("Enter the 2nd numerator ----> ");		
+		int secondNumerator = scanner.nextInt();
+		System.out.print("Enter the 2nd denominator --> ");
+    int secondDenominator = scanner.nextInt();
 
-		if (denominator != 0 && numerator != 0){
-			Fraction first = new Fraction(numerator, denominator);
-			System.out.println(first.toString());
-		}
+		Fraction f1 = new Fraction(firstNumerator, firstDenominator);
+    Fraction f2 = new Fraction(secondNumerator, secondDenominator);
+		System.out.print(Operations.add(f1, f2));
   }
 }
