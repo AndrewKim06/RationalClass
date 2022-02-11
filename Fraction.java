@@ -34,10 +34,13 @@ public class Fraction
 		int gcd = 0;
     for(int i = 1; i <= numerator && i <= denominator; i++)
       {
-        if(numerator % i == 0 && denominator % i ==0){					
+        if(numerator % i == 0 && denominator % i == 0){					
 					gcd = i;
 				}
       }
+			if (gcd == 0){
+				gcd = 1;
+			}
 			return gcd;
   }
 	public String simplified(){

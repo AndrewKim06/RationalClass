@@ -16,6 +16,10 @@ class Main {
 
 		Fraction f1 = new Fraction(firstNumerator, firstDenominator);
     Fraction f2 = new Fraction(secondNumerator, secondDenominator);
-		System.out.print(Operations.add(f1, f2));
+		System.out.println("Add: " + Operations.add(f1, f2));
+		System.out.println("Multiply: " + Operations.multiply(f1, f2));
+		System.out.println("Subtract: " + Operations.subtract(f1, f2));
+		System.out.println("Divide: " + Operations.divide(f1, f2));
+    System.out.println("Subtract: " + Operations.subtract(f1, f2));
   }
 }
